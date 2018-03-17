@@ -5,9 +5,9 @@ fetch(url)
     .then(data => names.push(...data))
 console.log(names);
 checkMatches = (word, names) => {
-    let rejex = new RegExp(word, 'gi');
+    let regex = new RegExp(word, 'gi');
     return names.filter(x => {
-        return x.name.match(rejex);
+        return x.name.match(regex);
     })
 };
 displayMatches = (e) => {
